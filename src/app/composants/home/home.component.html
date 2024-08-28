@@ -1,0 +1,49 @@
+<div id="carouselExampleIndicators" class="carousel slide mt-[5%]" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active h-[650px] bg-center bg-cover" style="background-image: url(images/2024_08_27_18_36_IMG_1668.JPEG);">
+          <div class="grid lg:grid-cols-2 container">
+            <div>
+                <img src="images/Logo blanc PNG.png" class="lg:w-[250px] md:w-[200px] w-[150px] mx-auto mt-[67%] md:mt-[23%] lg:mt-[15%]"/>
+                <p class="text-white lg:text-[17px] text-[15px] text-uppercase text-center mt-[-8%] md:mt-[-5%] lg:mt-[-8%] font-bold" style="text-shadow: 2px 2px 2px black">
+                    International service
+                </p>
+                <h4 class="text-center text-white text-shadow-black text-uppercase text-[17px] mx-2" style="text-shadow: 2px 2px 2px black">
+                    Etudier dans des meilleures universités
+                    Internationales c'est possible chez nous
+                </h4>
+                <button class="animate-bounce flex justify-center items-center bg-transparent text-white border border-white px-5 py-3 mx-auto rounded-md mt-5 text-sm shadow-md">
+                    Contacter
+                </button>
+            </div>
+            <div>
+             
+            </div>
+          </div>
+      </div>
+      <div class="carousel-item  h-[650px] bg-center bg-cover" style="background-image: url(images/2024_08_27_18_41_IMG_1674.JPEG);">
+         
+      </div>
+      <div class="carousel-item bg-center bg-cover h-[650px]" style="background-image: url(images/2024_08_27_18_39_IMG_1671.JPEG);">
+         
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <app-about></app-about>
+  <app-services></app-services>
+
+  <div class="bg-[#EC0028] fixed top-0 left-0 right-0 bottom-0 z-50 flex justify-center items-center" *ngIf="splash">
+    <img src="images/2024_08_28_14_10_IMG_1700.GIF" class="w-[200px]"/>
+  </div>
