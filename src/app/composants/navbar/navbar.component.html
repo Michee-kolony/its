@@ -13,8 +13,24 @@
        <a class="py-2 mt-1" ><img src="images/2024_08_27_21_23_IMG_1683.PNG" class="w-[40px]"/></a>
        <a class="py-2 mt-[6px]" ><img src="images/2024_08_27_21_22_IMG_1682.PNG" class="w-[36px]"/></a>
     </div>
-   <div class="flex lg:hidden">
-    <i class="fa-solid fa-bars text-[20px] py-3 mt-2 opacity-50 cursor-pointer mr-3"></i>
+   <div class="flex lg:hidden px-4 px-2 mt-4">
+     <div (click)="togglemenu()" *ngIf="menu"><i class="fa-solid fa-bars text-[20px]"></i></div>
+     <div (click)="closemenu()" *ngIf="!menu">X</div>
    </div>
 </div>
+</div>
+
+<div class="fixed fblock gap-3 h-full w-[200px] right-2 top-[15%] z-30 lg:hidden bg-transparent mr-2" *ngIf="!menu">
+ <div class="bg-[#f33838] text-white py-2 px-4 shadow-md border border-white" routerLink="/home">
+    <a>Accueil</a>
+ </div>
+ <div class="bg-[#f33838] text-white py-2 px-4 mt-2 shadow-md border border-white" routerLink="/about">
+    <a>A propos</a>
+ </div>
+ <div class="bg-[#f33838] text-white py-2 px-4 mt-2 shadow-md border border-white" routerLink="/services">
+    <a>Services</a>
+ </div>
+ <div class="bg-[#f33838] text-white py-2 px-4 mt-2 shadow-md border border-white" routerLink="/services">
+    <a>Contact</a>
+ </div>
 </div>
