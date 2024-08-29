@@ -12,4 +12,5 @@ export class AboutComponent implements OnInit {
       this.splash = false;
     }, 3500);
    }
+  
 }
