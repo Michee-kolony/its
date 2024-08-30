@@ -1,7 +1,24 @@
-.link{
+.link1{
     transform: rotate(-90deg) rotateY(90deg);
     transform-origin: top right;
     animation: animation1 1s ease forwards;
+}
+.link2{
+    transform: rotate(-90deg) rotateY(90deg);
+    transform-origin: top left;
+    animation: animation1 1s ease forwards;
+    animation-delay: 300ms;
+}
+.link3{
+    transform: rotate(-90deg) rotateY(90deg);
+    transform-origin: top right;
+    animation: animation1 1s ease forwards;
+}
+.link4{
+    transform: rotate(-90deg) rotateY(90deg);
+    transform-origin: top left;
+    animation: animation1 1s ease forwards;
+    animation-delay: 300ms;
 }
 
 @keyframes animation1{
