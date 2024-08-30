@@ -8,10 +8,10 @@
         <a  class="cursor-pointer text-decoration-none text-black py-3" routerLink="/contact">Contact</a>
     </div>
 
-    <div class="hidden lg:flex gap-2">
-       <a class="py-3 cursor-pointer" href="https://web.facebook.com/internationalservicerdc?locale=fr_FR" target="_blank"><img src="images/2024_08_27_21_22_IMG_1681.PNG" class="w-[30px]"/></a>
-       <a class="py-2 mt-1" href="https://www.instagram.com/internatinal_services_243rdc/" target="_blank"><img src="images/2024_08_27_21_23_IMG_1683.PNG" class="w-[40px]"/></a>
-       <a class="py-2 mt-[6px]" ><img src="images/2024_08_27_21_22_IMG_1682.PNG" class="w-[36px]"/></a>
+    <div class="hidden lg:flex gap-3 text-[#f33838] text-[25px]">
+       <a class="py-3 cursor-pointer" href="https://web.facebook.com/internationalservicerdc?locale=fr_FR" target="_blank"><i class="fa-brands fa-facebook text-[#f33838]"></i></a>
+       <a class="py-2 mt-2" href="https://www.instagram.com/internatinal_services_243rdc/" target="_blank"><i class="fa-brands fa-instagram text-[#f33838]"></i></a>
+       <a class="py-2 mt-[8px]" ><i class="fa-brands fa-whatsapp text-[#f33838]"></i></a>
     </div>
    <div class="flex lg:hidden  mt-3">
      <div (click)="togglemenu()" class="px-4 py-3" *ngIf="menu"><i class="fa-solid fa-bars text-[20px]"></i></div>
@@ -21,16 +21,16 @@
 </div>
 
 <div class="fixed fblock gap-3 h-full w-[200px] right-2 top-[12%] z-30 lg:hidden bg-transparent mr-2" *ngIf="!menu">
- <div class="bg-white text-black py-2 px-4 shadow-md border  link1" routerLink="/home">
+ <div class="bg-white text-black py-2 px-4 shadow-md border  link1" routerLink="/home" (click)="closemenu()">
     <a>Accueil</a>
  </div>
- <div class="bg-white  text-black py-2 px-4 mt-2 shadow-md border link2" routerLink="/about">
+ <div class="bg-white  text-black py-2 px-4 mt-2 shadow-md border link2" routerLink="/about" (click)="closemenu()">
     <a>A propos</a>
  </div>
- <div class="bg-white text-black py-2 px-4 mt-2 shadow-md border link3" routerLink="/services">
+ <div class="bg-white text-black py-2 px-4 mt-2 shadow-md border link3" routerLink="/services" (click)="closemenu()">
     <a>Services</a>
  </div>
- <div class="bg-white text-black py-2 px-4 mt-2 shadow-md border link4" routerLink="/contact">
+ <div class="bg-white text-black py-2 px-4 mt-2 shadow-md border link4" routerLink="/contact" (click)="closemenu()">
     <a>Contact</a>
  </div>
 </div>
