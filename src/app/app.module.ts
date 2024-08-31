@@ -12,6 +12,7 @@ import { FooterComponent } from './composants/footer/footer.component';
 import { ServicesComponent } from './composants/services/services.component';
 import { TestmonialComponent } from './composants/testmonial/testmonial.component';
 import { FaqComponent } from './composants/faq/faq.component';
+import {CountUpModule} from 'ngx-countup';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FaqComponent } from './composants/faq/faq.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CountUpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -69,15 +69,15 @@
   </div>
 <div class="lg:h-[200px] grid lg:grid-cols-3 container bg-black/70 text-white pb-5" style="border-bottom-left-radius: 100px;border-bottom-right-radius: 100px;">
     <div class="text-center">
-      <div class="text-[30px] font-bold mt-[10%] count" data-target="235">+235</div>
-        <div class="font-bold">Touristes</div>
+      <div class="text-[30px] font-bold mt-[10%] count" [countUp]="345" [options]="{ enableScrollSpy: true }">0</div>
+        <div class="font-bold">Touristes satisfait</div>
     </div>
     <div class="text-center">
-      <div class="text-[30px] font-bold mt-[10%] count" data-target="200">+200</div>
-      <div class="font-bold">Etudiant satisfait</div>
+      <div class="text-[30px] font-bold mt-[10%] count" [countUp]="250" [options]="{ enableScrollSpy: true }">0</div>
+      <div class="font-bold">Etudiants satisfait</div>
   </div>
   <div class="text-center">
-    <div class="text-[30px] font-bold mt-[10%] count" data-target="150">+280</div>
+    <div class="text-[30px] font-bold mt-[10%] count" [countUp]="280" [options]="{ enableScrollSpy: true }">0</div>
     <div class="font-bold">Nombre des prises en charge assurées</div>
 </div>
 </div>
