@@ -7,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit{
 splash : boolean = true;
-
+modal: boolean = false;
  ngOnInit() : void {
   setTimeout(() => {
     this.splash = false;
   }, 5000);
+  setTimeout(() => {
+    this.modal = true;
+  }, 10000);
+ }
+
+ closemodal(){
+  this.modal = false;
  }
 }

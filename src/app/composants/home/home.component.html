@@ -61,3 +61,18 @@
   <div class="bg-[#EC0028] fixed top-0 left-0 right-0 bottom-0 z-50 flex justify-center items-center" *ngIf="splash">
     <img src="images/2024_08_28_14_10_IMG_1700.GIF" class="w-[200px]"/>
   </div>
+  <div class="bg-black/60 fixed top-0 left-0 right-0 bottom-0 z-40 flex justify-center items-center" *ngIf="modal">
+    <div class="pb-5 rounded-xl w-[350px] lg:w-[700px] bg-[#f33838] flex justify-center items-center ounded-xl shadow-xl overflow-hidden relative modal-animation">
+      <span class="absolute top-2 right-5 font-bold py-2 px-2 cursor-pointer ext-white" (click)="closemodal()">X</span>
+      <div>
+        <h3 class="text-center text-white text-uppercase mt-5">Profitez de nos offres</h3>
+        <img src="images/2024_09_01_02_16_IMG_1800.PNG" class="w-[600px] mt-[-17%]"/>
+        <div class="flex gap-2 mt-[-10%] justify-center items-center">
+          <a class="py-2 px-5 bg-white rounded-md mx-auto text-sm text-decoration-none" href="https://web.facebook.com/internationalservicerdc?locale=fr_FR" target="_blank">
+              Consulter nos offres <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
