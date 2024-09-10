@@ -1,6 +1,15 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
-<a href="https://wa.me/+243812933850?text=Bonjour" target="_blank" class="fixed left-0 bottom-0 animate-bounce">
-   <img src="images/vecteezy_whatsapp-logo-png-whatsapp-icon-png-whatsapp-transparent_18930748.png" class="w-[100px] z-30"/>
-</a>
+<div *ngIf="discussion"  class="h-[120px] discussion w-[350px] animate-bounce bg-white rounded-xl flex  justify-center items-center text-center pb-3  fixed left-5 bottom-5 z-20 shadow-md border border-gray-200">
+ <div class="mx-auto">
+    <p class="text-[13px]  mt-3">
+        Notre assistant est en ligne pour discuter
+         avec vous et éclairicir certains points sur 
+         internatinal services
+      </p>
+      <a  href="https://wa.me/+243812933850?text=Bonjour" target="_blank" class="px-5 py-2 border bg-transparent text-decoration-none text-black">
+        discuter <i class="fa-brands fa-whatsapp"></i>
+      </a>
+ </div>
+</div>

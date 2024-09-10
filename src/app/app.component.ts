@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'its';
+  discussion: boolean = false;
+
+  ngOnInit() : void{
+  setTimeout(() =>{
+    this.discussion = true;
+  }, 20000)
+  }
 }

@@ -1,0 +1,10 @@
+.discussion{
+    transform: translateY(90%);
+    animation : discussion 1s ease forwards;
+}
+
+@keyframes discussion{
+    to{
+       transform : translateX(0%);
+    }
+}
