@@ -1,5 +1,5 @@
 .discussion{
-    transform: translateY(90%);
+    transform: translateX(-90%);
     animation : discussion 1s ease forwards;
 }
 
